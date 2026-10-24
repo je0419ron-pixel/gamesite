@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テトリス | ASOBI BOUNCE</title>
+
+    <link rel="stylesheet" href="テトリス.css">
+</head>
+<body>
+
+    <header>
+        <h1>ASOBI BOUNCE</h1>
+        <p>TETRIS</p>
+    </header>
+
+    <main>
+
+        <section class="game-area" id="gameArea">
+
+            <canvas
+                id="gameCanvas"
+                width="300"
+                height="600">
+            </canvas>
+
+            <button
+                id="startButton"
+                class="start-button">
+                ゲーム開始
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="テトリスシステム.js"></script>
+
+    <script>
+        window.addEventListener("load", () => {
+
+            document
+            .getElementById("gameArea")
+            .scrollIntoView({
+                behavior:"smooth",
+                block:"center"
+            });
+
+        });
+    </script>
+
+</body>
+</html>
